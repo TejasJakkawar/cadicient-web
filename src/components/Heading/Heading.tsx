@@ -6,7 +6,7 @@ type headingProps = {
 };
 
 export const Heading = ({ heading }: headingProps) => {
-  const [visibleLetters, setVisibleLetters] = useState("");
+  const [visibleLetters, setVisibleLetters] = useState<string>("");
 
   useEffect(() => {
     let timeout: ReturnType<typeof setTimeout>;
