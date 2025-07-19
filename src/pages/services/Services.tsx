@@ -5,9 +5,7 @@ const Services = () => {
   return (
     <>
       <div className="p-10">
-        <div className="flex w-full justify-center">
-          <Heading heading={data?.services?.heading} />
-        </div>
+        <Heading heading={data?.services?.heading} />
         <div className="text-5xl font-bold mt-10">
           {data?.services?.subheading}
         </div>

@@ -26,23 +26,25 @@ export const Heading = ({ heading }: headingProps) => {
   }, [visibleLetters, heading]);
 
   return (
-    <div className="text-2xl text-primary-accent-color tracking-[3px] relative text-left h-[20px] w-fit font-bold">
-      {/* Static placeholder to fix width */}
-      <div className="opacity-0 whitespace-nowrap pointer-events-none">
-        {heading}
-      </div>
+    <div className="flex w-full justify-center">
+      <div className="text-2xl text-primary-accent-color tracking-[3px] relative text-left h-[20px] w-fit font-bold">
+        {/* Static placeholder to fix width */}
+        <div className="opacity-0 whitespace-nowrap pointer-events-none">
+          {heading}
+        </div>
 
-      {/* Animated layer over it */}
-      <div className="absolute top-0 left-0 whitespace-nowrap tracking-[2px]">
-        {visibleLetters.split("").map((char, i) => (
-          <span
-            key={i}
-            className="animated-letter"
-            style={{ animationDelay: `${i * 0.04}s` }}
-          >
-            {char}
-          </span>
-        ))}
+        {/* Animated layer over it */}
+        <div className="absolute top-0 left-0 whitespace-nowrap tracking-[2px]">
+          {visibleLetters.split("").map((char, i) => (
+            <span
+              key={i}
+              className="animated-letter"
+              style={{ animationDelay: `${i * 0.04}s` }}
+            >
+              {char}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
