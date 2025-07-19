@@ -1,11 +1,12 @@
 import './App.css'
+import Navbar from "./pages/navbar/Navbar.tsx";
 
 function App() {
-  return (
-      <>
-          <div className="text-xl font-medium text-black dark:text-white">CADICIENT</div>
-      </>
-  )
+    return (
+        <>
+            <Navbar/>
+        </>
+    )
 }
 
 export default App

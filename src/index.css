@@ -1,5 +1,7 @@
+@import "tailwindcss";
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -11,4 +13,23 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --cadicient-primary-accent-color: #f8991d;
+  --cadicient-primary-dark-color: #151515;
+}
+
+.bg-primary-dark-color {
+  background-color: var(--cadicient-primary-dark-color);
+}
+
+.bg-primary-accent-color {
+  background-color: var(--cadicient-primary-accent-color);
+}
+
+.text-primary-dark-color {
+  color: var(--cadicient-primary-dark-color);
+}
+
+.text-primary-accent-color {
+  color: var(--cadicient-primary-accent-color);
 }
