@@ -1,3 +1,7 @@
 {
-    "navbar":["HOME", "ABOUT US", "SERVICES", "BLOGS", "FAQs", "CONTACT US"]
+    "navbar":["HOME", "ABOUT US", "SERVICES", "BLOGS", "FAQs", "CONTACT US"],
+    "services": {
+        "heading": "SERVICES",
+        "subheading": "Tailored Services For Your Dreams"
+    }
 }
