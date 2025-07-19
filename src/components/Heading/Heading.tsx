@@ -5,7 +5,7 @@ type headingProps = {
   heading: string;
 };
 
-export const Heading = ({ heading }: headingProps) => {
+const Heading = ({ heading }: headingProps) => {
   const [visibleLetters, setVisibleLetters] = useState<string>("");
 
   useEffect(() => {
@@ -49,3 +49,5 @@ export const Heading = ({ heading }: headingProps) => {
     </div>
   );
 };
+
+export default Heading;
