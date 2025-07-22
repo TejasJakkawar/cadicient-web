@@ -17,3 +17,19 @@
   --cadicient-primary-accent-color: #f8991d;
   --cadicient-primary-dark-color: #151515;
 }
+
+.bg-primary-dark-color {
+  background-color: var(--cadicient-primary-dark-color);
+}
+
+.bg-primary-accent-color {
+  background-color: var(--cadicient-primary-accent-color);
+}
+
+.text-primary-dark-color {
+  color: var(--cadicient-primary-dark-color);
+}
+
+.text-primary-accent-color {
+  color: var(--cadicient-primary-accent-color);
+}

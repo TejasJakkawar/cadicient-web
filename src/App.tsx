@@ -3,6 +3,7 @@ import { ContactUs } from "./pages/contactus/ContactUs.tsx";
 
 import { Home } from "./pages/home/Home.tsx";
 import Navbar from "./pages/navbar/Navbar.tsx";
+import Services from "./pages/services/Services.tsx";
 import { Softwares } from "./pages/softwares/Softwares.tsx";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <>
       <Navbar />
       <Home />
+      <Services />
       <Softwares />
       <ContactUs />
     </>

@@ -3,6 +3,7 @@
 #root {
   max-width: 100%;
   text-align: center;
+  background-color: var(--cadicient-primary-dark-color);
 }
 
 .bg-primary-dark-color {
