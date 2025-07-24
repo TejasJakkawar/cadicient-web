@@ -5,3 +5,19 @@
   text-align: center;
   background-color: var(--cadicient-primary-dark-color);
 }
+
+.bg-primary-dark-color {
+  background-color: var(--cadicient-primary-dark-color);
+}
+
+.bg-primary-accent-color {
+  background-color: var(--cadicient-primary-accent-color);
+}
+
+.text-primary-dark-color {
+  color: var(--cadicient-primary-dark-color);
+}
+
+.text-primary-accent-color {
+  color: var(--cadicient-primary-accent-color);
+}
