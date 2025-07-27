@@ -1,0 +1,9 @@
+@keyframes pulseFade {
+  0% { opacity: 0.4; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0.4; transform: translateY(0); }
+}
+
+.animate-pulse-fade {
+  animation: pulseFade 3s ease-in-out infinite;
+}
