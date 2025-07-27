@@ -29,11 +29,7 @@ const Modal = (props: modalProps) => {
   if (!isOpen && !show) return null;
 
   return (
-    <div
-      onScroll={(e) => {
-        e.stopPropagation();
-      }}
-    >
+    <div>
       {/* Backdrop */}
       <div
         className={`fixed inset-0 bg-black transition-opacity duration-300 z-40 ${
@@ -52,7 +48,12 @@ const Modal = (props: modalProps) => {
             : "scale-90 opacity-0 pointer-events-none"
         }`}
       >
-        <div className="bg-neutral-950 rounded-xl shadow-lg w-[95vw] h-[calc(100vh-100px)] px-4 sm:px-6 md:px-10 pb-10 relative overflow-y-auto">
+        <div
+          onScroll={(e) => e.stopPropagation()}
+          onWheel={(e) => e.stopPropagation()}
+          onTouchMove={(e) => e.stopPropagation()}
+          className="bg-neutral-950 rounded-xl shadow-lg w-[95vw] h-[calc(100vh-100px)] px-4 sm:px-6 md:px-10 pb-10 relative overflow-y-auto"
+        >
           {/* Header */}
           <div className="sticky top-0 bg-neutral-950 text-2xl sm:text-3xl font-bold h-[70px] flex items-center justify-center z-10">
             {data?.heading}
