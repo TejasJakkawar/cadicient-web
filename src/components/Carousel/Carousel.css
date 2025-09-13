@@ -1,0 +1,94 @@
+.carousel {
+  max-width: 50%;
+  --slide-size: 50%;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+
+.carousel-slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-fade {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 30%,
+    black 70%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 30%,
+    black 70%,
+    transparent
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+@media screen and (max-width: 1536px) {
+  .carousel {
+    max-width: 60%;
+    --slide-size: 60%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .carousel {
+    max-width: 70%;
+    --slide-size: 60%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel {
+    max-width: 90%;
+    --slide-size: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    max-width: 100%;
+    --slide-size: 100%;
+  }
+
+  .carousel-fade {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 0%,
+      black 100%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 0%,
+      black 100%,
+      transparent
+    );
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+}

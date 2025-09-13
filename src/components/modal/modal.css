@@ -1,0 +1,12 @@
+.offerings {
+  border-right: 1px solid var(--cadicient-primary-accent-color);
+  border-left: 1px solid var(--cadicient-primary-accent-color);
+}
+
+@media screen and (max-width: 682px) {
+  .offerings {
+    border: none;
+    border-bottom: 1px solid var(--cadicient-primary-accent-color);
+    padding-bottom: 30px;
+  }
+}

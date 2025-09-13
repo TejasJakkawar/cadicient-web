@@ -1,0 +1,7 @@
+.service-container:hover {
+  border-color: var(--cadicient-primary-accent-color);
+}
+
+.service-container:hover .service-read-more {
+  color: var(--cadicient-primary-accent-color);
+}
