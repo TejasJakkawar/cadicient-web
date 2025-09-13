@@ -18,13 +18,12 @@ export const ContactUs: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [showSuccess, setShowSuccess] = useState<boolean>(false);
+  const [showError, setShowError] = useState<boolean>(false);
 
   useEffect(() => {
-    // Trigger entrance animation
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 100);
-
     return () => clearTimeout(timer);
   }, []);
 
@@ -41,23 +40,38 @@ export const ContactUs: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setShowError(false);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    try {
+      const response = await fetch(
+        import.meta.env.VITE_FORMSPREE_ENDPOINT as string,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
-    // Reset form and show success
-    setFormData({ name: "", email: "", message: "" });
-    setIsSubmitting(false);
-    setShowSuccess(true);
-
-    // Hide success message after 3 seconds
-    setTimeout(() => setShowSuccess(false), 3000);
+      if (response.ok) {
+        setFormData({ name: "", email: "", message: "" });
+        setShowSuccess(true);
+        setTimeout(() => setShowSuccess(false), 3000);
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      console.error("Form submission failed:", error);
+      setShowError(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <div className="contact-us-component">
       <div className="contact-page">
-        {/* Background Effects */}
         <div className="background-effects">
           <div className="floating-orb orb-1"></div>
           <div className="floating-orb orb-2"></div>
@@ -65,7 +79,6 @@ export const ContactUs: React.FC = () => {
           <div className="grid-overlay"></div>
         </div>
 
-        {/* Success Message */}
         {showSuccess && (
           <div className="success-message">
             <div className="success-content">
@@ -74,10 +87,18 @@ export const ContactUs: React.FC = () => {
             </div>
           </div>
         )}
+        {showError && (
+          <div className="error-message">
+            <div className="error-content">
+              <div className="error-icon">✗</div>
+              <p>Failed to send message. Please try again.</p>
+            </div>
+          </div>
+        )}
 
         <div className={`container ${isVisible ? "visible" : ""}`}>
           <div className="content-grid">
-            {/* Left Section */}
+            {/* LEFT SECTION */}
             <div className="left-section">
               <div className="header-section">
                 <div className="tagline">
@@ -86,7 +107,6 @@ export const ContactUs: React.FC = () => {
                 <h1 className="main-title">
                   Contact <span className="highlight">Us</span>
                 </h1>
-                {/* <div className="title-underline"></div> */}
               </div>
 
               <p className="description">
@@ -95,9 +115,7 @@ export const ContactUs: React.FC = () => {
                 and let's connect!
               </p>
 
-              {/* Contact Information and Social Networks Side by Side */}
               <div className="info-social-grid">
-                {/* Contact Information */}
                 <div className="contact-info">
                   <h3 className="section-title">REACH US THROUGH</h3>
                   <div className="contact-items">
@@ -133,7 +151,6 @@ export const ContactUs: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Social Networks */}
                 <div className="social-section">
                   <h3 className="section-title">SOCIAL NETWORKS</h3>
                   <div className="social-items">
@@ -162,11 +179,10 @@ export const ContactUs: React.FC = () => {
               </div>
             </div>
 
-            {/* Right Section - Contact Form */}
+            {/* RIGHT SECTION */}
             <div className="right-section">
               <div className="form-container">
                 <h2 className="form-title">Send Us A Message</h2>
-                {/* <div className="form-underline"></div> */}
 
                 <form onSubmit={handleSubmit} className="contact-form">
                   <div className="input-group">
