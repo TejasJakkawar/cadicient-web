@@ -81,31 +81,31 @@ export const Softwares: React.FC = () => {
     {
       id: 1,
       name: "Autocad",
-      imagePath: "../public/autocad.png",
+      imagePath: "autocad.png",
       alt: "Autocad",
     },
     {
       id: 2,
       name: "Civil 3D",
-      imagePath: "../public/civil3d.jpeg",
+      imagePath: "civil3d.jpeg",
       alt: "Civil 3D",
     },
     {
       id: 3,
       name: "Epanet",
-      imagePath: "../public/epanet.png",
+      imagePath: "epanet.png",
       alt: "Epanet",
     },
     {
       id: 4,
       name: "HecRas",
-      imagePath: "../public/hecras.jpeg",
+      imagePath: "hecras.jpeg",
       alt: "HecRas",
     },
     {
       id: 5,
       name: "Revit",
-      imagePath: "../public/revit.png",
+      imagePath: "revit.png",
       alt: "Revit",
     },
   ];
@@ -114,7 +114,7 @@ export const Softwares: React.FC = () => {
   const duplicatedLogos = [...logos, ...logos, ...logos];
 
   return (
-    <div className="logo-carousel-container">
+    <div id="softwares" className="logo-carousel-container">
       <h2 className="logo-carousel-title">Software We Use</h2>
       <div className="logo-carousel-wrapper">
         <div className="logo-carousel-track">

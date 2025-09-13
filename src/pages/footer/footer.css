@@ -1,0 +1,8 @@
+footer {
+  background: #0e0e0e; /* Match exact background color */
+  background-image: url("/path-to-your-pattern.png"); /* If grid pattern is used */
+  background-size: cover; /* Adjust to match */
+  background-position: top;
+  color: #fff;
+  padding: 40px 20px;
+}

@@ -70,7 +70,7 @@ export const ContactUs: React.FC = () => {
   };
 
   return (
-    <div className="contact-us-component">
+    <div id="contact" className="contact-us-component">
       <div className="contact-page">
         <div className="background-effects">
           <div className="floating-orb orb-1"></div>
