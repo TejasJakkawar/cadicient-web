@@ -227,7 +227,8 @@ export const Home = () => {
             Of Infrastructure
           </h1>
           <p className="hero-subtitle">
-            Welcome to Cadicient—where your vision meets engineering excellence
+            Welcome to Cadicient — where your vision meets engineering
+            excellence
           </p>
           <div className="hero-buttons">
             <button className="btn-primary">Our Services</button>
@@ -235,7 +236,7 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className="hero-video">
+        {/* <div className="hero-video">
           <div className="video-container">
             <video className="background-video" autoPlay loop muted playsInline>
               <source
@@ -245,7 +246,7 @@ export const Home = () => {
             </video>
             <div className="video-overlay"></div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
