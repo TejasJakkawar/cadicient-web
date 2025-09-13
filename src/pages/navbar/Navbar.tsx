@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./navbar.css";
 import { Menu, X } from "lucide-react";
-import CadicientLogo from "../../assets/CADICIENT.png";
+import CadicientLogo from "../../assets/CADICIENT-LOGO.png";
 import constants from "../../constants/constants.json";
 
 const Navbar = () => {
