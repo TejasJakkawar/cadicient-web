@@ -3,5 +3,19 @@
     "services": {
         "heading": "SERVICES",
         "subheading": "Tailored Services For Your Dreams"
+    },
+    "aboutus":{
+        "heading": "ABOUT US",
+        "subheading": "About our Company",
+        "contentHeading": "Forging Success from Earth's Depths",
+        "contentdesc": "At Cadicient Engineering Consultants, we are a team of dedicated professionals committed to providing top-tier civil engineering services. With years of experience and expertise in a wide range of disciplines, we ensure that every project we undertake is executed with the highest standards of quality and precision. From residential to commercial projects, we bring a wealth of knowledge to every task, ensuring that your needs are met with innovative, sustainable solutions.",
+        "contentsubsection": "Our mission is to help you turn your visions into reality through reliable engineering expertise, clear communication, and attention to detail. Whether it’s CAD drafting, surveying, environmental studies, or civil engineering solutions, we provide comprehensive services designed to optimize your project’s success. At Cadicient, we don’t just deliver results—we build lasting partnerships grounded in trust and excellence.",
+        "experience":"4+ Years Of Experience"
+    },
+    "workdetails":{
+        "NumberofProjects":{"key":"Completed Projects","value": "14+"},
+        "hours":{"key":"Happy Hours","value": "2500+"},
+        "clients":{"key":"Happy Clients","value": "6+"},
+        "experience":{"key":"Industry Experience","value": "4+"}
     }
 }
