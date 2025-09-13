@@ -18,9 +18,13 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex text-white text-l space-x-6 font-semibold justify-start">
             {constants.navbar.map((navbarItem, index) => (
-              <span className="navbar-items underline-hover" key={index}>
-                {navbarItem}
-              </span>
+              <a
+                href={`#${navbarItem?.route}`}
+                className="navbar-items underline-hover"
+                key={index}
+              >
+                {navbarItem?.key}
+              </a>
             ))}
           </div>
 
@@ -46,7 +50,7 @@ const Navbar = () => {
               key={index}
               onClick={() => setIsOpen(false)}
             >
-              {navbarItem}
+              {navbarItem?.key}
             </span>
           ))}
         </div>

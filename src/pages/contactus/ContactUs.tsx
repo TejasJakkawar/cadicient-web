@@ -55,7 +55,7 @@ export const ContactUs: React.FC = () => {
   };
 
   return (
-    <div className="contact-us-component">
+    <div id="contact" className="contact-us-component">
       <div className="contact-page">
         {/* Background Effects */}
         <div className="background-effects">
