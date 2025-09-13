@@ -45,13 +45,14 @@ const Navbar = () => {
       >
         <div className="flex flex-col space-y-6 text-xl font-semibold mt-20 px-[30px]">
           {constants.navbar.map((navbarItem, index) => (
-            <span
+            <a
+              href={`#${navbarItem?.route}`}
               className="navbar-items text-left"
               key={index}
               onClick={() => setIsOpen(false)}
             >
               {navbarItem?.key}
-            </span>
+            </a>
           ))}
         </div>
       </div>
