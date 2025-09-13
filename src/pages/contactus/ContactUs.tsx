@@ -42,24 +42,32 @@ export const ContactUs: React.FC = () => {
     setIsSubmitting(true);
     setShowError(false);
 
+    const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT;
+    if (!endpoint) {
+      console.error("environment variable is not set.");
+      setShowError(true);
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
-      const response = await fetch(
-        import.meta.env.VITE_FORMSPREE_ENDPOINT as string,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch(endpoint as string, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       if (response.ok) {
         setFormData({ name: "", email: "", message: "" });
         setShowSuccess(true);
         setTimeout(() => setShowSuccess(false), 3000);
       } else {
-        throw new Error("Form submission failed");
+        const errorText = await response.text();
+        throw new Error(
+          `Form submission failed: status ${response.status} - ${errorText}`
+        );
       }
     } catch (error) {
       console.error("Form submission failed:", error);
