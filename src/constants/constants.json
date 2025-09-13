@@ -1,10 +1,278 @@
 {
-    "navbar":["HOME", "ABOUT US", "SERVICES", "BLOGS", "FAQs", "CONTACT US"],
-    "services": {
-        "heading": "SERVICES",
-        "subheading": "Tailored Services For Your Dreams"
-    },
-    "aboutus":{
+  "navbar": ["HOME", "ABOUT US", "SERVICES", "BLOGS", "FAQs", "CONTACT US"],
+  "services": {
+    "heading": "SERVICES",
+    "subheading": "Tailored Services For Your Dreams",
+    "services": [
+      {
+        "name": "CAD Drafting",
+        "subText": "Where Innovation meets Precision",
+        "description": "From CAD conversions, including PDF to CAD transformations, to meticulous cabinet drafting and precise as-built drawings, our CAD drafting services are designed to meet your specific project needs with accuracy and efficiency.",
+        "service": {
+          "heading": "CAD DRAFTING",
+          "subheading": "Our CAD Drafting Services",
+          "img": "services/drafting.png",
+          "alt": "drafting.png",
+          "description": "At Cadicient Engineering Consultants, our CAD Drafting services deliver precision and flexibility for every project. From seamless CAD conversions to accurate as-built drawings, we provide customized solutions that align with your project needs. Our expertise ensures reliable, editable CAD files, enhancing project efficiency and accuracy.\nWith site planning and cabinet drafting among our core offerings, we support both large-scale layouts and intricate cabinetry designs. Our site planning ensures optimized layouts that meet zoning and environmental standards, while our cabinet drafting brings your custom designs to life with precise detail. At Cadicient, we make your drafting needs a priority.\nGet in touch with us to explore our 2D and 3D CAD Services for reliable and modern drafting solutions, designed to elevate your projects to new heights.",
+          "offerings": [
+            {
+              "offering": "CAD Conversions",
+              "category": "DEVELOPMENT",
+              "desc": "Transform PDFs and other formats into precise, editable CAD files, ensuring accuracy and compatibility with project requirements.",
+              "img": "services/cad-conversion.png",
+              "alt": "services/cad-conversion.png"
+            },
+            {
+              "offering": "As-Built Drawings",
+              "category": "DEVELOPMENT",
+              "desc": "Create detailed, up-to-date drawings that reflect actual on-site conditions, essential for renovation and compliance.",
+              "img": "services/as-built-drawing.png",
+              "alt": "services/as-built-drawing.png"
+            },
+            {
+              "offering": "Site Planning",
+              "category": "CHALLENGES",
+              "desc": "Design efficient, optimized site layouts that integrate zoning requirements, utilities, and environmental considerations for seamless project development.",
+              "img": "services/site-planning.png",
+              "alt": "services/site-planning.png"
+            },
+            {
+              "offering": "Cabinet Drafting",
+              "category": "DEVELOPMENT",
+              "desc": "Deliver custom, precise drafting for cabinetry and millwork, tailored to fit exact project dimensions and design aesthetics.",
+              "img": "services/cabinet-drafting.png",
+              "alt": "services/cabinet-drafting.png"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Civil Engineering",
+        "subText": "Where Expertise Meets Excellence",
+        "description": "At Cadicient Engineering Consultants, we specialize in comprehensive civil engineering services that ensure your project is designed with precision, efficiency, and sustainability. Our expertise spans a wide range of offerings, from site planning and development to detailed grading and drainage design, ensuring that every aspect of your project is carefully planned and executed. With in-depth knowledge of stormwater design, erosion and sediment control, and flood risk assessments, we are equipped to manage environmental challenges and regulatory requirements effectively.\nWhether you need expert FEMA flood insurance studies, innovative detention and retention pond design, or precise channel design, our solutions are tailored to meet your unique project needs. We also provide reliable scour analysis, street design, and intersection design to enhance traffic flow and safety. Our services extend to essential infrastructure planning, including water supply storage and distribution, parking design, and the creation of preliminary and final plat documents for subdivisions. At Cadicient, we produce detailed construction drawings and as-builts, ensuring that your project is built to last and fully compliant with all regulations.\nGet in touch with us to explore  Services for reliable and modern civil engineering solutions, designed to elevate your projects to new heights.",
+        "service": {
+          "heading": "Civil Engineering",
+          "subheading": "our civil engineering services",
+          "img": "services/drafting.png",
+          "alt": "drafting.png",
+          "description": "At Cadicient Engineering Consultants, our CAD Drafting services deliver precision and flexibility for every project. From seamless CAD conversions to accurate as-built drawings, we provide customized solutions that align with your project needs. Our expertise ensures reliable, editable CAD files, enhancing project efficiency and accuracy.\nWith site planning and cabinet drafting among our core offerings, we support both large-scale layouts and intricate cabinetry designs. Our site planning ensures optimized layouts that meet zoning and environmental standards, while our cabinet drafting brings your custom designs to life with precise detail. At Cadicient, we make your drafting needs a priority.\nGet in touch with us to explore our 2D and 3D CAD Services for reliable and modern drafting solutions, designed to elevate your projects to new heights.",
+          "offerings": [
+            {
+              "offering": "Planning and development",
+              "category": "DEVELOPMENT",
+              "desc": "Craft efficient site layouts, addressing zoning, utilities, and environmental considerations to optimize project design.",
+              "img": "services/cad-conversion.png",
+              "alt": "services/cad-conversion.png"
+            },
+            {
+              "offering": "Grading and drainage",
+              "category": "DEVELOPMENT",
+              "desc": "Design grading and drainage systems that ensure site stability, prevent erosion, and manage water flow effectively.",
+              "img": "services/as-built-drawing.png",
+              "alt": "services/as-built-drawing.png"
+            },
+            {
+              "offering": "Stormwater Design",
+              "category": "CHALLENGES",
+              "desc": "Develop stormwater management systems that reduce runoff, mitigate flooding, and protect the surrounding environment.",
+              "img": "services/site-planning.png",
+              "alt": "services/site-planning.png"
+            },
+            {
+              "offering": "FEMA Flood Insurance Studies",
+              "category": "DEVELOPMENT",
+              "desc": "Conduct detailed floodplain analyses to assist with FEMA flood insurance requirements and flood risk assessment.",
+              "img": "services/cabinet-drafting.png",
+              "alt": "services/cabinet-drafting.png"
+            },
+            {
+              "offering": "Eroision & Sediment Control",
+              "category": "DEVELOPMENT",
+              "desc": "Plan and implement erosion control measures to protect your site from sediment displacement during construction.",
+              "img": "services/cad-conversion.png",
+              "alt": "services/cad-conversion.png"
+            },
+            {
+              "offering": "Channel Design",
+              "category": "DEVELOPMENT",
+              "desc": "Design efficient and sustainable water channels that manage flow, prevent erosion, and promote environmental health.",
+              "img": "services/as-built-drawing.png",
+              "alt": "services/as-built-drawing.png"
+            },
+            {
+              "offering": "Detention / Retention Pond Design",
+              "category": "CHALLENGES",
+              "desc": "Design detention and retention ponds that manage stormwater runoff and prevent flooding on-site",
+              "img": "services/site-planning.png",
+              "alt": "services/site-planning.png"
+            },
+            {
+              "offering": "Scour Analysis",
+              "category": "DEVELOPMENT",
+              "desc": "Assess and design strategies to prevent scour and erosion around bridges, culverts, and other water-related structures.",
+              "img": "services/cabinet-drafting.png",
+              "alt": "services/cabinet-drafting.png"
+            },
+            {
+              "offering": "Urban, Suburban & Rural Street Design",
+              "category": "DEVELOPMENT",
+              "desc": "Create safe, efficient street layouts that meet local regulations and support long-term infrastructure needs.",
+              "img": "services/cad-conversion.png",
+              "alt": "services/cad-conversion.png"
+            },
+            {
+              "offering": "Intersection & Roundabout Design",
+              "category": "DEVELOPMENT",
+              "desc": "Design safe, efficient intersections with optimized traffic flow and minimal congestion.",
+              "img": "services/as-built-drawing.png",
+              "alt": "services/as-built-drawing.png"
+            },
+            {
+              "offering": "Water Supply & Storage Distribution",
+              "category": "CHALLENGES",
+              "desc": "Design reliable water supply systems, including storage and distribution networks, to meet community demands.",
+              "img": "services/site-planning.png",
+              "alt": "services/site-planning.png"
+            },
+            {
+              "offering": "Parking Design",
+              "category": "DEVELOPMENT",
+              "desc": "Design efficient, accessible parking layouts that meet zoning requirements and maximize space usage.",
+              "img": "services/cabinet-drafting.png",
+              "alt": "services/cabinet-drafting.png"
+            },
+            {
+              "offering": "Preliminary & Final Plat",
+              "category": "DEVELOPMENT",
+              "desc": "Prepare detailed preliminary and final plats for subdivisions, ensuring compliance with regulations and community standards.",
+              "img": "services/cad-conversion.png",
+              "alt": "services/cad-conversion.png"
+            },
+            {
+              "offering": "Construction Drawings",
+              "category": "DEVELOPMENT",
+              "desc": "Develop clear, precise construction drawings that guide the project from start to finish, ensuring quality and compliance.",
+              "img": "services/as-built-drawing.png",
+              "alt": "services/as-built-drawing.png"
+            },
+            {
+              "offering": "As-Built Drawings",
+              "category": "CHALLENGES",
+              "desc": "Provide accurate as-built drawings that reflect completed project conditions for future maintenance and development.",
+              "img": "services/site-planning.png",
+              "alt": "services/site-planning.png"
+            },
+            {
+              "offering": "Subdivison Planning",
+              "category": "DEVELOPMENT",
+              "desc": "Plan residential and commercial subdivisions that maximize space, meet zoning laws, and integrate community needs.",
+              "img": "services/cabinet-drafting.png",
+              "alt": "services/cabinet-drafting.png"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Survey",
+        "subText": "Accurate Data for Smart Decisions",
+        "description": "At Cadicient Engineering Consultants, we provide expert survey CAD drafting services, specializing in boundary creation, ALTA survey sheets, and tree surveys. Using GIS data, web imagery, and surveyor points, we deliver precise and efficient solutions tailored to meet the needs of USA-based companies. Whether it’s drafting property lines, creating detailed survey sheets, or supporting landscaping and environmental planning, our expertise ensures accuracy and compliance in every project.\nFrom start to finish, our expertise ensures that your survey requirements are met with professionalism and precision, no matter the complexity.\nGet in touch with us today to leverage our expert survey CAD drafting services",
+        "service": {
+          "heading": "Survey",
+          "subheading": "our survey services",
+          "img": "services/drafting.png",
+          "alt": "drafting.png",
+          "description": "At Cadicient Engineering Consultants, we provide expert survey CAD drafting services, specializing in boundary creation, ALTA survey sheets, and tree surveys. Using GIS data, web imagery, and surveyor points, we deliver precise and efficient solutions tailored to meet the needs of USA-based companies. Whether it’s drafting property lines, creating detailed survey sheets, or supporting landscaping and environmental planning, our expertise ensures accuracy and compliance in every project.\nFrom start to finish, our expertise ensures that your survey requirements are met with professionalism and precision, no matter the complexity.\nGet in touch with us today to leverage our expert survey CAD drafting services",
+          "offerings": [
+            {
+              "offering": "Survey CAD Drafting",
+              "category": "DEVELOPMENT",
+              "desc": "Transform raw surveyor points into precise, professional CAD drawings tailored to project specifications.",
+              "img": "services/cad-conversion.png",
+              "alt": "services/cad-conversion.png"
+            },
+            {
+              "offering": "Boundary Creation",
+              "category": "DEVELOPMENT",
+              "desc": "Use GIS data or web imagery to draft accurate property boundaries for land assessment and planning.",
+              "img": "services/as-built-drawing.png",
+              "alt": "services/as-built-drawing.png"
+            },
+            {
+              "offering": "ALTA Survey Sheets",
+              "category": "CHALLENGES",
+              "desc": "Create detailed, standardized ALTA/NSPS survey sheets for commercial and legal property transactions.",
+              "img": "services/site-planning.png",
+              "alt": "services/site-planning.png"
+            },
+            {
+              "offering": "Tree Surveys",
+              "category": "DEVELOPMENT",
+              "desc": "Draft tree location surveys for landscaping, environmental assessments, and urban planning.",
+              "img": "services/cabinet-drafting.png",
+              "alt": "services/cabinet-drafting.png"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Environmental Studies",
+        "subText": "Building Sustainable Futures",
+        "description": "At Cadicient Engineering Consultants, we provide comprehensive environmental studies designed to safeguard your project and the environment. Our expertise includes creating hydrographs for pre- and post-development models to ensure that runoff is managed effectively. We perform HEC-RAS modeling to analyze river hydraulics and prevent increases in water elevation caused by construction. Our drainage studies and scour calculations ensure that your development is safe from water damage and foundation instability. We also specialize in developing erosion control plans and managing floodplain risks, offering solutions that comply with environmental regulations and promote long-term sustainability.\nGet in touch with us today to discuss how our expert environmental studies services, including hydrograph analysis, HEC-RAS modeling, and erosion control plans, can ensure the success and sustainability of your project.",
+        "service": {
+          "heading": "Environmental Studies",
+          "subheading": "Where Innovation meet precisions",
+          "img": "services/drafting.png",
+          "alt": "drafting.png",
+          "description": "At Cadicient Engineering Consultants, we provide comprehensive environmental studies designed to safeguard your project and the environment. Our expertise includes creating hydrographs for pre- and post-development models to ensure that runoff is managed effectively. We perform HEC-RAS modeling to analyze river hydraulics and prevent increases in water elevation caused by construction. Our drainage studies and scour calculations ensure that your development is safe from water damage and foundation instability. We also specialize in developing erosion control plans and managing floodplain risks, offering solutions that comply with environmental regulations and promote long-term sustainability.\nGet in touch with us today to discuss how our expert environmental studies services, including hydrograph analysis, HEC-RAS modeling, and erosion control plans, can ensure the success and sustainability of your project.",
+          "offerings": [
+            {
+              "offering": "HEC-RAS Modeling",
+              "category": "DEVELOPMENT",
+              "desc": "Perform HEC-RAS models to analyze river hydraulics and ensure construction projects do not impact water elevations.",
+              "img": "services/cad-conversion.png",
+              "alt": "services/cad-conversion.png"
+            },
+            {
+              "offering": "Hydrograph Analysis",
+              "category": "DEVELOPMENT",
+              "desc": "Develop pre- and post-development hydrographs to ensure runoff is controlled with appropriate mitigation measures.",
+              "img": "services/as-built-drawing.png",
+              "alt": "services/as-built-drawing.png"
+            },
+            {
+              "offering": "Drainage Studies",
+              "category": "CHALLENGES",
+              "desc": "Conduct comprehensive drainage studies, including hydrology and hydraulics, to manage water flow effectively.",
+              "img": "services/site-planning.png",
+              "alt": "services/site-planning.png"
+            },
+            {
+              "offering": "Erosion Control Plans",
+              "category": "DEVELOPMENT",
+              "desc": "Design erosion and sediment control plans to protect sites during and after construction.",
+              "img": "services/cabinet-drafting.png",
+              "alt": "services/cabinet-drafting.png"
+            },
+            {
+              "offering": "Scour Calculations",
+              "category": "CHALLENGES",
+              "desc": "Analyze scour effects and recommend finished floor elevations to safeguard properties in flood-prone areas.",
+              "img": "services/site-planning.png",
+              "alt": "services/site-planning.png"
+            },
+            {
+              "offering": "Floodplain Management",
+              "category": "DEVELOPMENT",
+              "desc": "Evaluate and mitigate flood risks for safe and compliant developments.",
+              "img": "services/cabinet-drafting.png",
+              "alt": "services/cabinet-drafting.png"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "aboutus":{
         "heading": "ABOUT US",
         "subheading": "About our Company",
         "contentHeading": "Forging Success from Earth's Depths",
@@ -17,11 +285,11 @@
         "vision":"Our Vision",
         "where":"Where We’re Headed",
         "wheresubcontent":"To be a trusted partner in delivering innovative and sustainable engineering services that make a positive impact on communities and businesses globally."
-    },
-    "workdetails":{
-        "NumberofProjects":{"key":"Completed Projects","value": "14+"},
-        "hours":{"key":"Happy Hours","value": "2500+"},
-        "clients":{"key":"Happy Clients","value": "6+"},
-        "experience":{"key":"Industry Experience","value": "4+"}
-    }
+  },
+  "workdetails": {
+    "NumberofProjects": { "key": "Completed Projects", "value": "14+" },
+    "hours": { "key": "Happy Hours", "value": "2500+" },
+    "clients": { "key": "Happy Clients", "value": "6+" },
+    "experience": { "key": "Industry Experience", "value": "4+" }
+  }
 }
