@@ -20,7 +20,10 @@ const Services = () => {
 
   return (
     <>
-      <div className={`p-5 md:p-10 flex flex-col items-center relative`}>
+      <div
+        id="services"
+        className={`p-5 md:p-10 flex flex-col items-center relative`}
+      >
         <Heading heading={data?.services?.heading} />
         <div className="text-5xl font-bold mt-10">
           {data?.services?.subheading}

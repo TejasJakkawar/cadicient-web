@@ -6,7 +6,7 @@ import useCountUpOnView from "./CountUp";
 const AboutUs = () => {
   const details = Object.values(data?.workdetails || {});
   return (
-    <div className="about-us-component">
+    <div id="about" className="about-us-component">
       <div className="p-10">
         <Heading heading={data?.aboutus?.heading} />
         <div className="text-5xl font-bold mt-10">

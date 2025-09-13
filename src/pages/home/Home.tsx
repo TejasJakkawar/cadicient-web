@@ -191,7 +191,7 @@ export const Home = () => {
   }, []);
 
   return (
-    <div className="hero-container">
+    <div id="home" className="hero-container">
       <canvas ref={canvasRef} className="animated-canvas" />
 
       <div className="blueprint-overlay" />

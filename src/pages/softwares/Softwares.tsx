@@ -114,7 +114,7 @@ export const Softwares: React.FC = () => {
   const duplicatedLogos = [...logos, ...logos, ...logos];
 
   return (
-    <div className="logo-carousel-container">
+    <div id="softwares" className="logo-carousel-container">
       <h2 className="logo-carousel-title">Software We Use</h2>
       <div className="logo-carousel-wrapper">
         <div className="logo-carousel-track">

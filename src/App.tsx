@@ -11,11 +11,11 @@ function App() {
     <>
       <Navbar />
       <Home />
+      <AboutUs />
       <Services />
       <AboutUs />
       <Softwares />
       <ContactUs />
-      
     </>
   );
 }
