@@ -1,8 +1,79 @@
-footer {
-  background: #0e0e0e; /* Match exact background color */
-  background-image: url("/path-to-your-pattern.png"); /* If grid pattern is used */
-  background-size: cover; /* Adjust to match */
-  background-position: top;
-  color: #fff;
-  padding: 40px 20px;
+.footer-component {
+  /* Reset only within this component */
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* Main Container - scoped to contact page */
+.footer-component .footer-page {
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 50%, #2d2d2d 100%);
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+}
+
+/* Background Effects */
+.footer-component .background-effects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.footer-component .grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+  opacity: 0.5;
+}
+
+/* Floating Orbs */
+.footer-component .floating-orb {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 118, 47, 0.1),
+    rgba(255, 118, 47, 0.05)
+  );
+  filter: blur(1px);
+}
+
+.footer-component .orb-1 {
+  width: 300px;
+  height: 300px;
+  top: -150px;
+  left: -150px;
+  animation: contact-float-1 20s ease-in-out infinite;
+}
+
+.footer-component .orb-2 {
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  right: -100px;
+  animation: contact-float-2 15s ease-in-out infinite reverse;
+}
+
+.footer-component .orb-3 {
+  width: 150px;
+  height: 150px;
+  bottom: -75px;
+  left: 30%;
+  animation: contact-float-3 18s ease-in-out infinite;
 }
