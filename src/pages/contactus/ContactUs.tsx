@@ -18,13 +18,12 @@ export const ContactUs: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [showSuccess, setShowSuccess] = useState<boolean>(false);
+  const [showError, setShowError] = useState<boolean>(false);
 
   useEffect(() => {
-    // Trigger entrance animation
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 100);
-
     return () => clearTimeout(timer);
   }, []);
 
@@ -41,17 +40,41 @@ export const ContactUs: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setShowError(false);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT;
+    if (!endpoint) {
+      console.error("environment variable is not set.");
+      setShowError(true);
+      setIsSubmitting(false);
+      return;
+    }
 
-    // Reset form and show success
-    setFormData({ name: "", email: "", message: "" });
-    setIsSubmitting(false);
-    setShowSuccess(true);
+    try {
+      const response = await fetch(endpoint as string, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    // Hide success message after 3 seconds
-    setTimeout(() => setShowSuccess(false), 3000);
+      if (response.ok) {
+        setFormData({ name: "", email: "", message: "" });
+        setShowSuccess(true);
+        setTimeout(() => setShowSuccess(false), 3000);
+      } else {
+        const errorText = await response.text();
+        throw new Error(
+          `Form submission failed: status ${response.status} - ${errorText}`
+        );
+      }
+    } catch (error) {
+      console.error("Form submission failed:", error);
+      setShowError(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
