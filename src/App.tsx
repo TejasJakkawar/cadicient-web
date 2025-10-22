@@ -6,6 +6,7 @@ import Navbar from "./pages/navbar/Navbar.tsx";
 import Services from "./pages/services/Services.tsx";
 import { Softwares } from "./pages/softwares/Softwares.tsx";
 import Footer from "./pages/footer/Footer.tsx";
+import Testimonials from "./pages/testimonials/testimonial.tsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <AboutUs />
       <Services />
       <Softwares />
+      <Testimonials />
       <ContactUs />
       <Footer />
     </>
