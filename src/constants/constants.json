@@ -298,5 +298,35 @@
     "hours": { "key": "Happy Hours", "value": "2500+" },
     "clients": { "key": "Happy Clients", "value": "6+" },
     "experience": { "key": "Industry Experience", "value": "4+" }
+  },
+  "testimonials":{
+    "heading": "TESTIMONIALS",
+    "subheading": "What they say about our services",
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "position": "Project Manager, ABC Constructions",
+        "feedback": "Cadicient Engineering Consultants provided exceptional CAD drafting services for our recent project. Their attention to detail and commitment to deadlines were impressive. The team was responsive and easy to work with, making the entire process smooth and efficient. I highly recommend their services for any engineering needs.",
+        "img": "testimonials/john_doe.png",
+        "alt": "john_doe.png"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "position": "Civil Engineer, XYZ Developments",
+        "feedback": "Working with Cadicient was a fantastic experience. Their expertise in civil engineering and environmental studies helped us navigate complex challenges with ease. The quality of their work exceeded our expectations, and their professionalism was evident throughout the project. We look forward to collaborating with them again in the future.",
+        "img": "testimonials/jane_smith.png",
+        "alt": "jane_smith.png"
+      },
+      {
+        "id": 3,
+        "name": "Michael Brown",
+        "position": "Surveyor, LMN Surveying",
+        "feedback": "Cadicient's survey CAD drafting services were top-notch. They transformed our raw survey data into precise and professional drawings that were crucial for our project planning. Their team was knowledgeable and attentive to our specific requirements, ensuring that we received exactly what we needed. I would definitely recommend their services to others in the industry.",
+        "img": "testimonials/michael_brown.png",
+        "alt": "michael_brown.png"
+      }
+    ]
   }
 }
