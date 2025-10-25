@@ -11,12 +11,14 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home />
-      <AboutUs />
-      <Services />
-      <Softwares />
-      <ContactUs />
-      <Footer />
+      <div className="data-container-height mt-[100px] overflow-y-scroll">
+        <Home />
+        <AboutUs />
+        <Services />
+        <Softwares />
+        <ContactUs />
+        <Footer />
+      </div>
     </>
   );
 }

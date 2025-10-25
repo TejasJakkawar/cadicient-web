@@ -1,4 +1,4 @@
-import { ArrowRight, DraftingCompass } from "lucide-react";
+import { ArrowRight, DraftingCompass, Server } from "lucide-react";
 import Heading from "../../components/Heading/Heading";
 import data from "../../constants/constants.json";
 import "./services.css";
@@ -38,7 +38,11 @@ const Services = () => {
               >
                 <div className="w-[350px] h-[450px] border-2 border-t-6 border-zinc-700 rounded-xl service-container flex flex-col items-center py-[20px] px-[10px] sm:mx-10 max-sm:mx-2 cursor-pointer">
                   <div className="bg-primary-accent-color h-[100px] w-[100px] rounded-full flex justify-center items-center mt-5">
-                    <DraftingCompass color="#fff" size={50} strokeWidth={3} />
+                    <img
+                      className="h-[60px]"
+                      src={service?.logo}
+                      alt={service.logoText}
+                    />
                   </div>
                   <div className="text-md font-normal mt-5 text-zinc-600">
                     {service?.subText}

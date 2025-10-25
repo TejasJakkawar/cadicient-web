@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       {/* Top navbar container (always on top) */}
-      <div className="bg-primary-accent-color sticky top-0 z-50">
+      <div className="bg-primary-accent-color fixed top-0 z-50 w-[100vw]">
         <div className="bg-neutral-950 h-[100px] w-full lg:px-[100px] md:px-[20px] px-6 flex items-center justify-between relative">
           {/* Logo */}
           <img src={CadicientLogo} alt="Logo" className="h-[50px] z-50" />
