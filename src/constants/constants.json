@@ -20,7 +20,7 @@
         "service": {
           "heading": "CAD DRAFTING",
           "subheading": "Our CAD Drafting Services",
-          "img": "services/drafting.png",
+          "img": "services/cad.png",
           "alt": "drafting.png",
           "description": "At Cadicient Engineering Consultants, our CAD Drafting services deliver precision and flexibility for every project. From seamless CAD conversions to accurate as-built drawings, we provide customized solutions that align with your project needs. Our expertise ensures reliable, editable CAD files, enhancing project efficiency and accuracy.\nWith site planning and cabinet drafting among our core offerings, we support both large-scale layouts and intricate cabinetry designs. Our site planning ensures optimized layouts that meet zoning and environmental standards, while our cabinet drafting brings your custom designs to life with precise detail. At Cadicient, we make your drafting needs a priority.\nGet in touch with us to explore our 2D and 3D CAD Services for reliable and modern drafting solutions, designed to elevate your projects to new heights.",
           "offerings": [
@@ -64,7 +64,7 @@
         "service": {
           "heading": "Civil Engineering",
           "subheading": "our civil engineering services",
-          "img": "services/drafting.png",
+          "img": "services/civil.png",
           "alt": "drafting.png",
           "description": "At Cadicient Engineering Consultants, our CAD Drafting services deliver precision and flexibility for every project. From seamless CAD conversions to accurate as-built drawings, we provide customized solutions that align with your project needs. Our expertise ensures reliable, editable CAD files, enhancing project efficiency and accuracy.\nWith site planning and cabinet drafting among our core offerings, we support both large-scale layouts and intricate cabinetry designs. Our site planning ensures optimized layouts that meet zoning and environmental standards, while our cabinet drafting brings your custom designs to life with precise detail. At Cadicient, we make your drafting needs a priority.\nGet in touch with us to explore our 2D and 3D CAD Services for reliable and modern drafting solutions, designed to elevate your projects to new heights.",
           "offerings": [
@@ -192,7 +192,7 @@
         "service": {
           "heading": "Survey",
           "subheading": "our survey services",
-          "img": "services/drafting.png",
+          "img": "services/survey.png",
           "alt": "drafting.png",
           "description": "At Cadicient Engineering Consultants, we provide expert survey CAD drafting services, specializing in boundary creation, ALTA survey sheets, and tree surveys. Using GIS data, web imagery, and surveyor points, we deliver precise and efficient solutions tailored to meet the needs of USA-based companies. Whether it’s drafting property lines, creating detailed survey sheets, or supporting landscaping and environmental planning, our expertise ensures accuracy and compliance in every project.\nFrom start to finish, our expertise ensures that your survey requirements are met with professionalism and precision, no matter the complexity.\nGet in touch with us today to leverage our expert survey CAD drafting services",
           "offerings": [
@@ -236,7 +236,7 @@
         "service": {
           "heading": "Environmental Studies",
           "subheading": "Where Innovation meet precisions",
-          "img": "services/drafting.png",
+          "img": "services/env.png",
           "alt": "drafting.png",
           "description": "At Cadicient Engineering Consultants, we provide comprehensive environmental studies designed to safeguard your project and the environment. Our expertise includes creating hydrographs for pre- and post-development models to ensure that runoff is managed effectively. We perform HEC-RAS modeling to analyze river hydraulics and prevent increases in water elevation caused by construction. Our drainage studies and scour calculations ensure that your development is safe from water damage and foundation instability. We also specialize in developing erosion control plans and managing floodplain risks, offering solutions that comply with environmental regulations and promote long-term sustainability.\nGet in touch with us today to discuss how our expert environmental studies services, including hydrograph analysis, HEC-RAS modeling, and erosion control plans, can ensure the success and sustainability of your project.",
           "offerings": [

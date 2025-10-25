@@ -106,9 +106,9 @@ const Modal = (props: modalProps) => {
                     height={70}
                     width={70}
                   />
-                  <div className="text-base text-primary-accent-color font-semibold my-2">
+                  {/* <div className="text-base text-primary-accent-color font-semibold my-2">
                     {offering?.category}
-                  </div>
+                  </div> */}
                   <div className="text-lg font-bold mb-2">
                     {offering?.offering}
                   </div>
