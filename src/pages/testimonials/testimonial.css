@@ -8,7 +8,8 @@
 
 /* Testimonial specific carousel overrides to ensure single testimonial centering */
 #testimonials .carousel {
-  max-width: 90%;
+  max-width: 95%;
+  width: 100%;
   --slide-size: 100%;
   --slide-spacing: 0;
 }
@@ -32,8 +33,9 @@
 
 /* Testimonial Card Styles */
 .testimonial-card {
-  max-width: 800px;
-  width: calc(100% - 40px);
+  min-width: 400px;
+  max-width: 1000px;
+  width: auto;
   background: transparent;
   border: none;
   box-shadow: none;
@@ -75,7 +77,8 @@
   font-weight: 400;
   margin-bottom: 30px;
   text-align: center;
-  max-width: 600px;
+  max-width: 800px;
+  width: auto;
 }
 
 .testimonial-rating {
@@ -152,19 +155,16 @@
 }
 
 @media (max-width: 768px) {
-  #testimonials .carousel {
-    max-width: 95%;
-  }
-
   .testimonial-card {
-    width: 90%;
-    max-width: 400px;
+    min-width: 300px;
+    max-width: 95vw;
     padding: 25px;
     margin: 0 auto;
   }
 
   .testimonial-feedback {
-    font-size: 15px;
+    font-size: 18px;
+    max-width: 600px;
   }
 
   .testimonial-name {
@@ -179,17 +179,14 @@
 }
 
 @media (max-width: 480px) {
-  #testimonials .carousel {
-    max-width: 100%;
-  }
-
   .testimonial-card {
-    width: 95%;
-    max-width: 350px;
+    min-width: 250px;
+    max-width: 95vw;
     padding: 20px;
   }
 
   .testimonial-feedback {
-    font-size: 14px;
+    font-size: 16px;
+    max-width: 400px;
   }
 }

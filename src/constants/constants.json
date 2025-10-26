@@ -305,27 +305,27 @@
     "testimonials": [
       {
         "id": 1,
-        "name": "John Doe",
-        "position": "Project Manager, ABC Constructions",
-        "feedback": "Cadicient Engineering Consultants provided exceptional CAD drafting services for our recent project. Their attention to detail and commitment to deadlines were impressive. The team was responsive and easy to work with, making the entire process smooth and efficient. I highly recommend their services for any engineering needs.",
-        "img": "testimonials/john_doe.png",
-        "alt": "john_doe.png"
+        "name": "Burhan Jeelani Khan",
+        "position": "Civil Design Specialist @ Intrivista",
+        "feedback": "I've had the pleasure of working with Tejas on multiple land development projects, primarily focused on grading and utility design, as well as plan production using Civil 3D. Throughout our collaboration, Tejas consistently demonstrated a deep understanding of the Civil 3D tool and how to apply it effectively in real-world project scenarios.Working with Tejas has been a great experience — not only is he highly skilled, but he's also generous with his knowledge. I've learned a lot from him over the course of our projects. His attention to detail, problem-solving approach, and strong technical grasp make him a valuable asset to any team.I look forward to working with him again and highly recommend him to anyone in the land development and civil engineering space."
       },
       {
         "id": 2,
-        "name": "Jane Smith",
-        "position": "Civil Engineer, XYZ Developments",
-        "feedback": "Working with Cadicient was a fantastic experience. Their expertise in civil engineering and environmental studies helped us navigate complex challenges with ease. The quality of their work exceeded our expectations, and their professionalism was evident throughout the project. We look forward to collaborating with them again in the future.",
-        "img": "testimonials/jane_smith.png",
-        "alt": "jane_smith.png"
+        "name": "Shujan Valiani",
+        "position": "Co-Founder | Valiani Developments | Florida",
+        "feedback": "I had the pleasure of working with Tejas on several projects, and we couldn't be more impressed with his professionalism, expertise, and dedication. His innovative solutions, attention to detail, and commitment to delivering high-quality work within deadlines truly set him apart. Tejas has not only met but exceeded our expectations, and we look forward to future collaborations. Highly recommended for anyone seeking a top-tier civil engineer!"
       },
       {
         "id": 3,
-        "name": "Michael Brown",
-        "position": "Surveyor, LMN Surveying",
-        "feedback": "Cadicient's survey CAD drafting services were top-notch. They transformed our raw survey data into precise and professional drawings that were crucial for our project planning. Their team was knowledgeable and attentive to our specific requirements, ensuring that we received exactly what we needed. I would definitely recommend their services to others in the industry.",
-        "img": "testimonials/michael_brown.png",
-        "alt": "michael_brown.png"
+        "name": "Syed Quadri",
+        "position": "Founder of The BIM Skills | India",
+        "feedback": "I had the pleasure of working with Tejas, a highly skilled freelancer, on the NEOM Logistics Park Landscape project. He demonstrated exceptional expertise and dedication in using Civil 3D, playing a crucial role in our project. Tejas showcased his technical proficiency, attention to detail, and collaborative spirit throughout the project. Despite being a freelancer, he seamlessly integrated with our team and consistently accepted and overcame challenges with a positive attitude and innovative solutions. His ability to effectively manage complex design elements and ensure seamless integration with other project components was invaluable. Tejas consistently went above and beyond to deliver high-quality results, making him an asset to any team. I highly recommend Tejas for any future opportunities where his expertise in Civil 3D can be utilized."
+      },
+      {
+        "id": 4,
+        "name": "Tarik Taeha",
+        "position": "Founder of I.D.C. INTERGRATED DEVELOPMENT CONSORTIUM |California",
+        "feedback": "Tejas Jakkawar is an excellent engineer with extensive experience and a strong commitment to quality work. He appears to be a very reasonable individual who consistently performs well. My experiences working with him have been positive, and I've found him to be precise in his designs and punctual with his work. I would confidently recommend him to work with anyone as he would be a valuable asset to their team."
       }
     ]
   }
