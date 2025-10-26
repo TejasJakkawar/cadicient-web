@@ -306,5 +306,54 @@
     "hours": { "key": "Happy Hours", "value": "2500+" },
     "clients": { "key": "Happy Clients", "value": "6+" },
     "experience": { "key": "Industry Experience", "value": "4+" }
+  },
+  "faq": {
+    "heading": "FREQUENTLY ASKED QUESTIONS",
+    "subheading": "Digging Deeper, Few Answers To Your Questions",
+    "description": "We understand that you may have questions as you embark on your project. Whether you're exploring our Civil Engineering, CAD Drafting, Surveying, or Environmental Studies services, we're here to provide clarity. On the right side, you'll find answers to some of the most common questions we receive from clients. If you have any additional inquiries or specific needs, don't hesitate to reach out to us—we're here to help!",
+    "commonQuestions": [
+      {
+        "question": "What Types Of Civil Engineering Projects Do You Specialize In?",
+        "answer": "We specialize in a comprehensive range of civil engineering projects including structural design, transportation infrastructure, water resources management, geotechnical engineering, and environmental engineering. Our expertise covers residential and commercial buildings, bridges, highways, drainage systems, and site development projects."
+      },
+      {
+        "question": "How Do Your CAD Drafting Services Benefit My Project?",
+        "answer": "Our CAD drafting services provide precise technical drawings, 3D modeling, and detailed construction documents that enhance project accuracy and efficiency. We use the latest software to create detailed plans that help reduce construction errors, improve project visualization, and ensure compliance with building codes and regulations."
+      },
+      {
+        "question": "What Is Your Approach To Environmental Studies?",
+        "answer": "Our environmental studies approach is comprehensive and compliant with all regulatory requirements. We conduct thorough environmental impact assessments, soil and water quality testing, ecological surveys, and provide detailed mitigation strategies. Our team ensures your project meets all environmental standards while minimizing ecological impact."
+      },
+      {
+        "question": "Do You Provide Ongoing Support After The Project Is Completed?",
+        "answer": "Yes, we provide comprehensive post-project support including maintenance planning, warranty services, technical consultations, and assistance with any modifications or expansions. Our commitment extends beyond project completion to ensure long-term success and satisfaction."
+      },
+      {
+        "question": "Can You Work With International Clients?",
+        "answer": "Absolutely! We have experience working with international clients and are familiar with various international standards and regulations. We provide remote consultation services, digital project management, and can adapt our services to meet specific regional requirements and time zones."
+      }
+    ],
+    "projectQuestions": [
+      {
+        "question": "How Do You Ensure The Quality Of Your Work?",
+        "answer": "We maintain the highest quality standards through rigorous quality control processes, experienced team supervision, adherence to industry best practices, and regular project reviews. Our work is backed by professional certifications and we follow strict quality assurance protocols at every project phase."
+      },
+      {
+        "question": "What Is Your Project Timeline Like?",
+        "answer": "Project timelines vary based on scope and complexity. Typically, small to medium projects take 2-8 weeks, while larger projects may require 3-6 months or more. We provide detailed project schedules during the initial consultation and maintain regular communication to keep you updated on progress."
+      },
+      {
+        "question": "How Do I Get Started With A Project?",
+        "answer": "Getting started is simple! Contact us for an initial consultation where we'll discuss your project requirements, timeline, and budget. We'll then provide a detailed proposal and project plan. Once approved, we'll assign a dedicated project team to begin work immediately."
+      },
+      {
+        "question": "What Makes Cadicient Engineering Different From Other Engineering Firms?",
+        "answer": "Cadicient Engineering stands out through our commitment to innovation, personalized service, and cutting-edge technology. We combine years of experience with modern methodologies, provide transparent communication, and deliver projects on time and within budget while maintaining the highest quality standards."
+      },
+      {
+        "question": "How Do Your Survey Services Help My Project?",
+        "answer": "Our survey services provide accurate topographical data, boundary identification, and site analysis crucial for project planning. We use advanced surveying equipment to ensure precise measurements, helping to avoid costly mistakes and ensuring your project is built on solid ground with proper site preparation."
+      }
+    ]
   }
 }
