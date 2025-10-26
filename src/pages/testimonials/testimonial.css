@@ -1,18 +1,20 @@
 /* Main testimonials section background */
 #testimonials {
-  background-color: #000000;
-  min-height: 100vh;
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+  color: white;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Testimonial specific carousel overrides to ensure single testimonial centering */
 #testimonials .carousel {
-  max-width: 70%;
+  max-width: 90%;
   --slide-size: 100%;
   --slide-spacing: 0;
 }
 
 #testimonials .carousel-viewport {
-  overflow: visible;
+  overflow: hidden;
 }
 
 #testimonials .carousel-container {
@@ -30,73 +32,70 @@
 
 /* Testimonial Card Styles */
 .testimonial-card {
-  width: 380px;
-  min-height: 400px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  padding: 25px;
+  max-width: 800px;
+  width: calc(100% - 40px);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 40px 20px;
   margin: 0 auto;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   position: relative;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 /* Hover effect for testimonial cards */
 .testimonial-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(59, 130, 246, 0.3);
+  transform: none;
 }
 
 .testimonial-quote-icon {
-  position: absolute;
-  top: -15px;
-  left: 30px;
-  background: rgba(59, 130, 246, 0.2);
-  backdrop-filter: blur(10px);
-  border-radius: 50%;
-  padding: 15px;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-  border: 1px solid rgba(59, 130, 246, 0.3);
+  display: none;
 }
 
 .testimonial-content {
-  margin-top: 20px;
+  margin-top: 0;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .testimonial-feedback {
-  font-size: 16px;
+  font-size: 22px;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.8);
-  font-style: italic;
-  margin-bottom: 20px;
-  text-align: left;
+  color: rgba(255, 255, 255, 0.95);
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 600px;
 }
 
 .testimonial-rating {
   display: flex;
   justify-content: center;
-  gap: 2px;
-  margin-bottom: 20px;
+  gap: 4px;
+  margin-bottom: 30px;
 }
 
 .testimonial-author {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 15px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 8px;
+  padding-top: 0;
+  border-top: none;
 }
 
 .testimonial-avatar {
-  flex-shrink: 0;
+  display: none;
 }
 
 .avatar-placeholder {
@@ -122,13 +121,15 @@
   font-weight: 600;
   color: white;
   margin: 0 0 5px 0;
+  text-align: center;
 }
 
 .testimonial-position {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.7);
   margin: 0;
   line-height: 1.4;
+  text-align: center;
 }
 
 /* Responsive Design - adjust carousel for different screen sizes */

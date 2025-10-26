@@ -24,19 +24,19 @@ const Testimonials = () => {
                   <Quote size={40} color="#3B82F6" />
                 </div>
                 <div className="testimonial-content">
-                  <p className="testimonial-feedback">
-                    "{testimonial.feedback}"
-                  </p>
                   <div className="testimonial-rating">
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={`star-${testimonial.id}-${i}`}
-                        size={20}
+                        size={24}
                         fill="#FFD700"
                         color="#FFD700"
                       />
                     ))}
                   </div>
+                  <p className="testimonial-feedback">
+                    "{testimonial.feedback}"
+                  </p>
                 </div>
                 <div className="testimonial-author">
                   <div className="testimonial-avatar">
