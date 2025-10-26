@@ -69,8 +69,12 @@ const AboutUs = () => {
       <div className="content-div relative">
         <div className="hidden lg:block absolute right-0 top-0 h-full w-[80px] bg-[var(--cadicient-primary-accent-color)] z-0" />
         <div className="pt-[2%] px-[5%] items-center justify-center md:px-0 flex flex-col md:flex-row text-center md:text-left md:pl-[15%] md:max-w-[70%] lg:px-[100px] lg:max-w-[100%]">
-          <div className="w-full md:w-[30%] lg:w-[40%]">
-            
+          <div className="w-full md:w-[30%] lg:w-[40%] flex justify-center items-center">
+            <img
+              className="h-[150px]"
+              src="favicons/why-we-started.png"
+              alt="why-we-started"
+            />
           </div>
           <div className="w-full md:w-[60%] lg:w-[50%] mb-6 md:pl-[6px] lg:pl-[20px]">
             <p className="text-primary-accent-color font-medium md:font-semibold lg:font-semibold">
@@ -82,34 +86,41 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="mt-2">
-              <p className="text-zinc-400">
-                {data?.aboutus?.whatsubcontent}
-              </p>
+              <p className="text-zinc-400">{data?.aboutus?.whatsubcontent}</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="content-div relative mt-10 mb-10 h-70">
+      <div className="content-div relative mt-10 mb-20 md:mb-10 lg:mb-10 h-70">
         <div className="hidden lg:block absolute left-0 top-0 h-full w-[80px] bg-[var(--cadicient-primary-accent-color)] z-0" />
-        <div className="pt-[2%] px-[5%] items-center justify-center flex flex-col md:flex-row text-center md:text-left md:w-[60%] lg:w-[70%] md:px-0 lg:px-0">
-          <div className="w-full md:w-[60%] lg:w-[60%] mb-6">
+        <div className="pt-[2%] px-[5%] items-center justify-center flex flex-col md:flex-row text-center md:text-left md:w-[70%] lg:w-[100%] md:px-0 lg:px-0">
+          <div className="w-full md:w-[60%] lg:w-[40%] mb-6">
             <p className="text-primary-accent-color font-medium md:font-semibold lg:font-semibold">
               {data?.aboutus?.vision}
             </p>
+            <div className="my-4 flex justify-center md:hidden">
+              <img
+                className="h-[150px]"
+                src="favicons/vision.png"
+                alt="our-vision"
+              />
+            </div>
             <div className="mt-4">
               <p className="text-xl font-semibold md:font-bold lg:font-bold md:text-2xl lg:text-2xl">
                 {data?.aboutus?.where}
               </p>
             </div>
             <div className="mt-2">
-              <p className="text-zinc-400">
-                {data?.aboutus?.wheresubcontent}
-              </p>
+              <p className="text-zinc-400">{data?.aboutus?.wheresubcontent}</p>
             </div>
           </div>
-        </div>
-        <div className="w-full md:w-[20%] lg:w-[30%]">
-            
+          <div className="hidden md:flex w-full md:w-[20%] lg:w-[30%] justify-center items-center">
+            <img
+              className="h-[150px]"
+              src="favicons/vision.png"
+              alt="our-vision"
+            />
+          </div>
         </div>
       </div>
     </div>

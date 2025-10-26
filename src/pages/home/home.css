@@ -1,6 +1,6 @@
 /* Your existing CSS */
 .hero-container {
-  min-height: 100vh;
+  min-height: 100%;
   background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
   position: relative;
   overflow: hidden;
@@ -12,7 +12,7 @@
 .hero-container .hero-content {
   display: flex;
   align-items: center;
-  min-height: 90vh;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 0 3rem;
   gap: 4rem;

@@ -87,7 +87,7 @@ export const Softwares: React.FC = () => {
     {
       id: 2,
       name: "Civil 3D",
-      imagePath: "civil3d.jpeg",
+      imagePath: "civil3d.webp",
       alt: "Civil 3D",
     },
     {
@@ -99,7 +99,7 @@ export const Softwares: React.FC = () => {
     {
       id: 4,
       name: "HecRas",
-      imagePath: "hecras.jpeg",
+      imagePath: "hecras.png",
       alt: "HecRas",
     },
     {
