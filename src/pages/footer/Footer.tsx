@@ -2,7 +2,7 @@ import "./footer.css";
 
 export default function Footer() {
   return (
-    <footer className="footer-component w-full font-sans">
+    <footer className="footer-component w-full">
       <div className="footer-page">
         <div className="background-effects">
           <div className="floating-orb orb-1"></div>

@@ -21,3 +21,7 @@
 .text-primary-accent-color {
   color: var(--cadicient-primary-accent-color);
 }
+
+.data-container-height {
+  height: calc(100vh - 100px);
+}
