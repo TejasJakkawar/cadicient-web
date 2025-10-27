@@ -68,6 +68,8 @@
 
 import React from "react";
 import "./softwares.css"; // Import the scoped CSS file
+import ScrollAnimated from "../../components/ScrollAnimated/ScrollAnimated";
+import StaggeredAnimation from "../../components/StaggeredAnimation/StaggeredAnimation";
 
 interface LogoItem {
   id: number;
@@ -114,25 +116,32 @@ export const Softwares: React.FC = () => {
   const duplicatedLogos = [...logos, ...logos, ...logos];
 
   return (
-    <div id="softwares" className="logo-carousel-container">
-      <h2 className="logo-carousel-title">Software We Use</h2>
-      <div className="logo-carousel-wrapper">
-        <div className="logo-carousel-track">
-          {duplicatedLogos.map((logo, index) => (
-            <div key={`${logo.id}-${index}`} className="logo-carousel-item">
-              <img
-                src={logo.imagePath}
-                alt={logo.alt}
-                className="logo-carousel-image"
-              />
-              <span className="logo-carousel-name">{logo.name}</span>
+    <ScrollAnimated animation="slideUp" delay={0.2}>
+      <div id="softwares" className="logo-carousel-container">
+        <ScrollAnimated animation="fadeIn" delay={0.3}>
+          <h2 className="logo-carousel-title">Software We Use</h2>
+        </ScrollAnimated>
+        
+        <ScrollAnimated animation="scaleIn" delay={0.4}>
+          <div className="logo-carousel-wrapper">
+            <div className="logo-carousel-track">
+              {duplicatedLogos.map((logo, index) => (
+                <div key={`${logo.id}-${index}`} className="logo-carousel-item">
+                  <img
+                    src={logo.imagePath}
+                    alt={logo.alt}
+                    className="logo-carousel-image"
+                  />
+                  <span className="logo-carousel-name">{logo.name}</span>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-        {/* Cave effect overlays */}
-        <div className="logo-carousel-fade-left"></div>
-        <div className="logo-carousel-fade-right"></div>
+            {/* Cave effect overlays */}
+            <div className="logo-carousel-fade-left"></div>
+            <div className="logo-carousel-fade-right"></div>
+          </div>
+        </ScrollAnimated>
       </div>
-    </div>
+    </ScrollAnimated>
   );
 };
