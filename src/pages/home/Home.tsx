@@ -1,5 +1,8 @@
 import { useEffect, useRef } from "react";
 import "./home.css";
+import ScrollAnimated from "../../components/ScrollAnimated/ScrollAnimated";
+import StaggeredAnimation from "../../components/StaggeredAnimation/StaggeredAnimation";
+import Parallax from "../../components/Parallax/Parallax";
 
 interface ConstructionElement {
   x: number;
@@ -210,30 +213,51 @@ export const Home = () => {
         <div className="tech-line tech-line-4"></div>
       </div>
 
-      <div className="construction-icon icon-1">⚒</div>
-      <div className="construction-icon icon-2">🏗</div>
-      <div className="construction-icon icon-3">🔧</div>
-      <div className="construction-icon icon-4">📐</div>
-      <div className="construction-icon icon-5">🏢</div>
+      <Parallax speed={0.3} direction="up">
+        <div className="construction-icon icon-1">⚒</div>
+      </Parallax>
+      <Parallax speed={0.5} direction="down">
+        <div className="construction-icon icon-2">🏗</div>
+      </Parallax>
+      <Parallax speed={0.4} direction="left">
+        <div className="construction-icon icon-3">🔧</div>
+      </Parallax>
+      <Parallax speed={0.6} direction="right">
+        <div className="construction-icon icon-4">📐</div>
+      </Parallax>
+      <Parallax speed={0.35} direction="up">
+        <div className="construction-icon icon-5">🏢</div>
+      </Parallax>
 
       <div className="hero-content">
         <div className="hero-text">
-          <div className="hero-badge">
-            INNOVATIVE CIVIL ENGINEERING SERVICES
-          </div>
-          <h1 className="hero-title">
-            Shaping The Future
-            <br />
-            Of Infrastructure
-          </h1>
-          <p className="hero-subtitle">
-            Welcome to Cadicient — where your vision meets engineering
-            excellence
-          </p>
-          <div className="hero-buttons">
-            <button className="btn-primary">Our Services</button>
-            <button className="btn-secondary">Consult for free</button>
-          </div>
+          <ScrollAnimated animation="slideDown" delay={0.2}>
+            <div className="hero-badge">
+              INNOVATIVE CIVIL ENGINEERING SERVICES
+            </div>
+          </ScrollAnimated>
+          
+          <ScrollAnimated animation="slideUp" delay={0.4} distance={80}>
+            <h1 className="hero-title">
+              Shaping The Future
+              <br />
+              Of Infrastructure
+            </h1>
+          </ScrollAnimated>
+          
+          <ScrollAnimated animation="fadeIn" delay={0.6}>
+            <p className="hero-subtitle">
+              Welcome to Cadicient — where your vision meets engineering
+              excellence
+            </p>
+          </ScrollAnimated>
+          
+          <StaggeredAnimation staggerDelay={0.2}>
+            <div className="hero-buttons">
+              <button className="btn-primary">Our Services</button>
+              <button className="btn-secondary">Consult for free</button>
+            </div>
+          </StaggeredAnimation>
         </div>
 
         {/* <div className="hero-video">
