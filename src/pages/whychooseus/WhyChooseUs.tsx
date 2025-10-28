@@ -14,8 +14,8 @@ const WhyChooseUs = () => {
                 <div className="w-full md:w-[30%] lg:w-[40%] flex justify-center items-center">
                     <img
                         className="h-[150px]"
-                        src="favicons/why-we-started.png"
-                        alt="why-we-started"
+                        src="favicons/why_choose_us.png"
+                        alt="why-choose-us"
                     />
                 </div>
                 <div className="w-full md:w-[60%] lg:w-[50%] mb-6 md:mb-0 md:pl-[6px] lg:pl-[20px]">
