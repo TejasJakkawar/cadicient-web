@@ -301,6 +301,11 @@
     "where": "Where We’re Headed",
     "wheresubcontent": "To be a trusted partner in delivering innovative and sustainable engineering services that make a positive impact on communities and businesses globally."
   },
+  "whychooseus":{
+    "heading": "WHY CHOOSE US",
+    "subheading": "Your Project, Our Expertise",
+    "contentdesc": "With expert solutions tailored to your unique needs, innovative approaches that embrace the latest technologies, and a relentless commitment to precision, Cadicient Engineering is dedicated to ensuring the success of your project from concept to completion, delivering results that exceed expectations."
+  },
   "workdetails": {
     "NumberofProjects": { "key": "Completed Projects", "value": "14+" },
     "hours": { "key": "Happy Hours", "value": "2500+" },
