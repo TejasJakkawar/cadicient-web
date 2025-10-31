@@ -5,20 +5,26 @@ import { Home } from "./pages/home/Home.tsx";
 import Navbar from "./pages/navbar/Navbar.tsx";
 import Services from "./pages/services/Services.tsx";
 import { Softwares } from "./pages/softwares/Softwares.tsx";
+import FAQ from "./pages/faq/FAQ.tsx";
 import Footer from "./pages/footer/Footer.tsx";
 import Testimonials from "./pages/testimonials/testimonial.tsx";
+import WhyChooseUs from "./pages/whychooseus/WhyChooseUs.tsx";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Home />
-      <AboutUs />
-      <Services />
-      <Softwares />
-      <Testimonials />
-      <ContactUs />
-      <Footer />
+      <div className="data-container-height mt-[100px] overflow-y-scroll">
+        <Home />
+        <AboutUs />
+        <WhyChooseUs />
+        <Services />
+        <Softwares />
+        <Testimonials />
+        <FAQ />
+        <ContactUs />
+        <Footer />
+      </div>
     </>
   );
 }
