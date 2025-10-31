@@ -19,6 +19,20 @@
   --cadicient-primary-dark-color: #151515;
 }
 
+/* Hide scrollbars globally while maintaining scroll functionality */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* WebKit browsers (Chrome, Safari, Edge) */
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
 .bg-primary-dark-color {
   background-color: var(--cadicient-primary-dark-color);
 }

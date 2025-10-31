@@ -312,6 +312,37 @@
     "clients": { "key": "Happy Clients", "value": "6+" },
     "experience": { "key": "Industry Experience", "value": "4+" }
   },
+  "testimonials":{
+    "heading": "TESTIMONIALS",
+    "subheading": "What they say about our services",
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "Burhan Jeelani Khan",
+        "position": "Civil Design Specialist @ Intrivista",
+        "feedback": "I've had the pleasure of working with Tejas on multiple land development projects, primarily focused on grading and utility design, as well as plan production using Civil 3D. Throughout our collaboration, Tejas consistently demonstrated a deep understanding of the Civil 3D tool and how to apply it effectively in real-world project scenarios.Working with Tejas has been a great experience — not only is he highly skilled, but he's also generous with his knowledge. I've learned a lot from him over the course of our projects. His attention to detail, problem-solving approach, and strong technical grasp make him a valuable asset to any team.I look forward to working with him again and highly recommend him to anyone in the land development and civil engineering space."
+      },
+      {
+        "id": 2,
+        "name": "Shujan Valiani",
+        "position": "Co-Founder | Valiani Developments | Florida",
+        "feedback": "I had the pleasure of working with Tejas on several projects, and we couldn't be more impressed with his professionalism, expertise, and dedication. His innovative solutions, attention to detail, and commitment to delivering high-quality work within deadlines truly set him apart. Tejas has not only met but exceeded our expectations, and we look forward to future collaborations. Highly recommended for anyone seeking a top-tier civil engineer!"
+      },
+      {
+        "id": 3,
+        "name": "Syed Quadri",
+        "position": "Founder of The BIM Skills | India",
+        "feedback": "I had the pleasure of working with Tejas, a highly skilled freelancer, on the NEOM Logistics Park Landscape project. He demonstrated exceptional expertise and dedication in using Civil 3D, playing a crucial role in our project. Tejas showcased his technical proficiency, attention to detail, and collaborative spirit throughout the project. Despite being a freelancer, he seamlessly integrated with our team and consistently accepted and overcame challenges with a positive attitude and innovative solutions. His ability to effectively manage complex design elements and ensure seamless integration with other project components was invaluable. Tejas consistently went above and beyond to deliver high-quality results, making him an asset to any team. I highly recommend Tejas for any future opportunities where his expertise in Civil 3D can be utilized."
+      },
+      {
+        "id": 4,
+        "name": "Tarik Taeha",
+        "position": "Founder of I.D.C. INTERGRATED DEVELOPMENT CONSORTIUM |California",
+        "feedback": "Tejas Jakkawar is an excellent engineer with extensive experience and a strong commitment to quality work. He appears to be a very reasonable individual who consistently performs well. My experiences working with him have been positive, and I've found him to be precise in his designs and punctual with his work. I would confidently recommend him to work with anyone as he would be a valuable asset to their team."
+      }
+    ]
+
+  },
   "faq": {
     "heading": "FREQUENTLY ASKED QUESTIONS",
     "subheading": "Digging Deeper, Few Answers To Your Questions",
